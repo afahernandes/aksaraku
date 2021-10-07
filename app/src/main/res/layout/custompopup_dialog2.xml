@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/border"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txthuruf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="SELAMAT !"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+    <ImageView
+        android:id="@+id/txtgambar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bgdash"/>
+
+
+
+    <TextView
+        android:id="@+id/txtdeskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="14dp"
+        android:fontFamily="casual"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Anda Telah Menyelesaikan latihan soal.. "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Benar    :"
+            android:fontFamily="casual"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!--  telepon TextField -->
+        <TextView
+            android:id="@+id/txtbenar"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:fontFamily="casual"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="-"
+            android:textColor="#000000" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Salah    :"
+            android:fontFamily="casual"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!--  telepon TextField -->
+        <TextView
+            android:id="@+id/txtsalah"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:fontFamily="casual"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="-"
+            android:textColor="#000000" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Score     :"
+            android:fontFamily="casual"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!--  telepon TextField -->
+        <TextView
+            android:id="@+id/txtscore"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:fontFamily="casual"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="-"
+            android:textColor="#000000" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="14dp"
+        android:fontFamily="casual"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="--------------------------------------------------"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btntutup"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="60dp"
+            android:layout_margin="5dip"
+            android:text="Tutup"
+            android:textColor="#fff"
+            android:background="@drawable/grad2"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

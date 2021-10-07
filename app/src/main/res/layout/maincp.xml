@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg12"
+    tools:context="com.example.aksara.DrawingTestActivityBU">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/grad2">
+
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/siger4"
+            />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/spp1"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:text="Latihan Menulis"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtMarquee"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:fontFamily="casual"
+        android:background="@drawable/grad"
+        android:typeface="sans" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/myGambar"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ak_1" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Tulis Seperti gambar diatas : "/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+        <com.example.aksara.view.DrawingArea
+            android:id="@+id/drawing_area"
+            android:background="#ffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="220dp"/>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <Button
+                    android:id="@+id/check_btn"
+                    android:layout_width="0dp"
+                    android:background="@drawable/grad"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_4dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cek" />
+
+                <Button
+                    android:id="@+id/clear_btn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/grad"
+                    android:layout_margin="@dimen/_4dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClearSelected"
+                    android:text="Reset" />
+                <Button
+                    android:id="@+id/btnnext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/grad"
+                    android:layout_margin="@dimen/_4dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClearSelected"
+                    android:text="Selanjutnya" />
+            </LinearLayout>
+        <TextView
+            android:id="@+id/txthasil"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:textColor="#000000"
+            android:text="Detail : "/>
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

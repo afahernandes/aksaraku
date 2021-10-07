@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:background="@drawable/border"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/txthuruf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="INPUT NAMA"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+    <ImageView
+        android:id="@+id/txtgambar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bgdash" />
+
+
+
+    <TextView
+        android:id="@+id/txtdeskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="14dp"
+        android:fontFamily="casual"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Silahkan Input Nama Anda"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama : "
+        android:textColor="#000000"
+        android:fontFamily="casual"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!--  telepon TextField -->
+    <EditText
+        android:id="@+id/txtnama"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:background="@drawable/border"
+        android:textSize="20sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Usia : "
+        android:textColor="#000000"
+        android:fontFamily="casual"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!--  telepon TextField -->
+    <EditText
+        android:id="@+id/txtusia"
+        android:layout_width="fill_parent"
+        android:fontFamily="casual"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:background="@drawable/border"
+        android:textColor="#000000" />
+
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btnmulai"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="60dp"
+            android:layout_margin="5dip"
+            android:text="Mulai"
+            android:textColor="#fff"
+            android:background="@drawable/grad2"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

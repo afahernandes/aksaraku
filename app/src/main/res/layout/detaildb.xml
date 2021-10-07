@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="157dp"
+		android:layout_weight="0"
+		android:orientation="vertical"
+		android:gravity="center_horizontal"
+		android:background="@drawable/grad2">
+
+
+
+		<ImageView
+			android:id="@+id/imageView"
+			android:layout_width="fill_parent"
+			android:layout_height="120dp"
+			android:src="@drawable/siger4"
+			/>
+		<TextView
+			android:gravity="center"
+			android:id="@+id/spp1"
+			android:layout_width="fill_parent"
+			android:layout_height="35dp"
+			android:text="Detail Hasil"
+			android:textColor="@color/white"
+			android:textSize="23dp"
+			android:textStyle="bold"
+			android:fontFamily="serif"
+			/>
+
+
+	</LinearLayout>
+		<TextView
+			android:id="@+id/txtMarquee"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:ellipsize="marquee"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:singleLine="true"
+			android:textColor="#000"
+			android:textSize="10sp"
+			android:fontFamily="casual"
+			android:background="@drawable/grad"
+			android:typeface="sans" />
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_margin="15dp">
+
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Nama : "
+			android:textColor="#000000"
+			android:fontFamily="casual"
+			android:textSize="20sp"
+			android:textStyle="bold"/>
+
+		<!--  telepon TextField -->
+		<EditText
+			android:id="@+id/dnama"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/border"
+			android:editable="false"
+			android:fontFamily="casual"
+			android:textColor="#000000"
+			android:textSize="20sp" />
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Usia : "
+			android:textColor="#000000"
+			android:fontFamily="casual"
+			android:textSize="20sp"
+			android:textStyle="bold"/>
+
+		<!--  telepon TextField -->
+		<EditText
+			android:id="@+id/dusia"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/border"
+			android:editable="false"
+			android:fontFamily="casual"
+			android:textColor="#000000"
+			android:textSize="20sp" />
+		<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Jenis Latihan : "
+		android:textColor="#000000"
+		android:fontFamily="casual"
+		android:textSize="20sp"
+		android:textStyle="bold"/>
+
+		<!--  telepon TextField -->
+		<EditText
+			android:id="@+id/djenis"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/border"
+			android:editable="false"
+			android:fontFamily="casual"
+			android:textColor="#000000"
+			android:textSize="20sp" />
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Hasil : "
+			android:textColor="#000000"
+			android:fontFamily="casual"
+			android:textSize="20sp"
+			android:textStyle="bold"/>
+
+		<!--  telepon TextField -->
+		<EditText
+			android:id="@+id/dhasil"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/border"
+			android:editable="false"
+			android:fontFamily="casual"
+			android:textColor="#000000"
+			android:textSize="20sp" />
+
+		<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Waktu : "
+		android:textColor="#000000"
+		android:fontFamily="casual"
+		android:textSize="20sp"
+		android:textStyle="bold"/>
+
+		<!--  telepon TextField -->
+		<EditText
+			android:id="@+id/dwaktu"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/border"
+			android:editable="false"
+			android:fontFamily="casual"
+			android:textColor="#000000"
+			android:textSize="20sp" />
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Keterangan : "
+			android:textColor="#000000"
+			android:fontFamily="casual"
+			android:textSize="20sp"
+			android:textStyle="bold"/>
+
+		<!--  telepon TextField -->
+		<EditText
+			android:id="@+id/dketerangan"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/border"
+			android:editable="false"
+			android:fontFamily="casual"
+			android:textColor="#000000"
+			android:textSize="20sp" />
+
+		<Button
+			android:id="@+id/ddelete"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dip"
+			android:text="Hapus"
+			android:textColor="#fff"
+			android:background="@drawable/grad2"
+			android:textStyle="bold" />
+	</LinearLayout>
+	</LinearLayout>

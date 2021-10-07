@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:background="@color/white">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="157dp"
+			android:layout_weight="0"
+			android:orientation="vertical"
+			android:gravity="center_horizontal"
+			android:background="@drawable/grad2">
+
+
+
+			<ImageView
+				android:id="@+id/imageView"
+				android:layout_width="fill_parent"
+				android:layout_height="120dp"
+				android:src="@drawable/siger4"
+				/>
+			<TextView
+				android:gravity="center"
+				android:id="@+id/spp1"
+				android:layout_width="fill_parent"
+				android:layout_height="35dp"
+				android:text="Hasil Latihan"
+				android:textColor="@color/white"
+				android:textSize="23dp"
+				android:textStyle="bold"
+				android:fontFamily="serif"
+				/>
+
+
+		</LinearLayout>
+		<TextView
+			android:id="@+id/txtMarquee"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:ellipsize="marquee"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:singleLine="true"
+			android:textColor="#000"
+			android:textSize="10sp"
+			android:fontFamily="casual"
+			android:background="@drawable/grad"
+			android:typeface="sans" />
+<ListView
+	android:id="@android:id/list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+/>
+	</LinearLayout>
+</LinearLayout>

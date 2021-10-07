@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg12"
+    android:orientation="vertical">
+    <!-- Main ListView
+         Jangan lupa selalu berikan id value sebagai list(@android:id/list)
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/grad2">
+
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/siger4"
+              />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/spp1"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:text="Drawing Activity"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtMarquee"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:fontFamily="casual"
+        android:background="@drawable/grad"
+        android:typeface="sans" />
+    <TextView
+        android:id="@+id/txtjudul"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:text="Huruf Induk Aksara Lampung"
+        android:textStyle="bold"
+
+        android:fontFamily="casual"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/textcolor"
+        />
+    <GridView
+        android:layout_margin="@dimen/_4dp"
+        android:numColumns="4"
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent" android:layout_height="0dp"
+        android:layout_weight="1">
+    </GridView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bn_main"
+        android:layout_width="match_parent" android:layout_height="60dp"
+        android:layout_weight="0"
+        android:background="@drawable/grad" />
+</LinearLayout>

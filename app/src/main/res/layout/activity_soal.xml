@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="157dp"
+            android:layout_weight="0"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/grad2">
+
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/siger4"
+                />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/spp1"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:text="Latihan Soal"
+                android:textColor="@color/white"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                />
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtMarquee"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:fontFamily="casual"
+            android:background="@drawable/grad"
+            android:typeface="sans" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg12"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/myGambar" android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_search"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="10dp"
+            />
+        <LinearLayout
+            android:id="@+id/lineSoal"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/myGambar"
+            android:layout_margin="5dp"
+            android:background="#FF5722"
+            android:padding="6dp">
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#fff">
+
+            <TextView
+                android:id="@+id/txtTanya"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="#fff"
+                android:fontFamily="casual"
+                android:gravity="left"
+                android:padding="15dp"
+                android:text="SOAL"
+                android:autoSizeMaxTextSize="20sp"
+                android:textColor="@color/black_effective"
+                android:textSize="@dimen/font_soal" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linePilihanJawaban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineSoal"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:padding="6dp">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/RadioGroup01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radA"
+                        android:fontFamily="casual"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A. Pilihan A"
+                        android:textColor="#000"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radB"
+                        android:fontFamily="casual"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B. Pilihan B"
+                        android:textColor="#000"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radC"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:fontFamily="casual"
+                        android:layout_height="wrap_content"
+                        android:text="C. Pilihan C"
+                        android:textColor="#000"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radD"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:fontFamily="casual"
+                        android:layout_height="wrap_content"
+                        android:text="D. Pilihan D"
+                        android:textColor="#000"></RadioButton>
+
+
+                </RadioGroup>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bn_main"
+        android:layout_width="match_parent" android:layout_height="60dp"
+        android:layout_weight="0"
+        android:background="@drawable/grad2" />
+</LinearLayout>
